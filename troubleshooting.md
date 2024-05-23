@@ -6,6 +6,7 @@ description: Fixing common issues with Waypaper
 
 #### General issues
 
+* To restore the wallpaper after reboot, you need to launch `waypaper --restore` with the start of your system. Usually, it means that you need to add it the config of your WM.
 * If wallpaper does not change, first, try to launch waypaper in the terminal and see the output when you are trying to change the wallpaper. Also, try to change it via command line using chosen backend to make sure that backend by itself works correctly.
 * Please understand that not all backends work on all systems. `feh` is only for Xorg, while `swww` , `swaybg` and `hyprpaper` are only for Wayland.
 * If you use different WMs on the same system, specify the backend when you restore the wallpaper at launch. For example: `waypaper --restore --backend feh` or use `wallutils` which works on both Wayland and Xorg.
