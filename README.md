@@ -13,7 +13,8 @@ GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as 
 * Vim keys
 * Support for GIF animations (with `swww`)
 * Support for multiple monitors (with `swww`)
-* Works on both Wayland (with `swww` or `swaybg` or `wallutils`) and Xorg (with `feh` or `wallutils`)
+* Works on Wayland (with `swww` or `swaybg` or `wallutils` or `hyprpaper`)
+* Works on Xorg (with `feh` or `wallutils`)
 * Restores wallpaper at launch of your WM
 * Caching for fast loading
 
@@ -21,13 +22,15 @@ GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as 
 
 * [Installation](installation.md)
 * [Usage](usage.md)
+* [Keybindings](keybindings.md)
 * [Configuration](configuration.md)
 * [Troubleshooting](troubleshooting.md)
 * [Support and contribution](support-and-contribution.md)
 
-### Code repository
+### Repositories
 
-[https://github.com/anufrievroman/waypaper](https://github.com/anufrievroman/waypaper)
+* Code: [https://github.com/anufrievroman/waypaper](https://github.com/anufrievroman/waypaper)
+* Documentation: [https://github.com/anufrievroman/waypaper-docs](https://github.com/anufrievroman/waypaper-docs)
 
 If you enjoy using Waypaper, please consider [supporting](support-and-contribution.md)  the project.
 

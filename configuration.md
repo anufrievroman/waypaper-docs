@@ -5,14 +5,15 @@ On the first run, a config file will be created in your config directory, typica
 ```
 [Settings]
 language = en
-folder = /home/user/Pictures
-wallpaper = /home/user/Pictures/wallpaper.jpg
+folder = ~/Pictures
+wallpaper = ~/Pictures/wallpaper.jpg
 backend = swaybg
 monitors = All
 fill = Fill
 sort = name
 color = #ffffff
 subfolders = False
+number_of_columns = 3
 post_command = 
 swww_transition_type = any
 swww_transition_step = 90

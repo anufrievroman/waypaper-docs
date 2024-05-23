@@ -20,9 +20,9 @@ If `pipx` is not found, you first need to install `pipx` from your package manag
 
 **On Arch-based distributions**
 
-`yay -S waypaper-git`
+`yay -S waypaper-git` or `yay -S waypaper-git`
 
-The [waypaper-git](https://aur.archlinux.org/packages/waypaper-git) package is available in AUR, thanks to _metak_. Please upvote to support the project.
+The [waypaper](https://aur.archlinux.org/packages/waypaper) and [waypaper-git](https://aur.archlinux.org/packages/waypaper-git) package is available in AUR, thanks to _metak_. Please upvote to support the project.
 
 **On NixOS**
 
@@ -34,7 +34,7 @@ Users of OpenSUSE [reported problems with installation](https://github.com/anufr
 
 ## Dependencies
 
-* `swww` or `swaybg` or `feh` or `wallutils`
+* `swww` or `swaybg` or `feh` or `wallutils` or `hyprpaper`
 * gobject python library (it might be called `python-gobject` or `python3-gi` or `python3-gobject` in your package manager.)
 * `python-importlib_metadata`
 * `python-platformdirs`

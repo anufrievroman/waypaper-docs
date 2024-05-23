@@ -2,7 +2,9 @@
 
 ### Contributions
 
-Feel free to propose PR and suggest the improvements. I'll highly appreciate help with packaging for various distributions. If you wish to contribute with translation into your language, please see the `translations.py` file.
+Feel free to propose PR and suggest the improvements. I'll highly appreciate help with packaging for various distributions. If you wish to contribute with translation into your language, please see the `translations.py` file.\
+\
+If you'd like to contribute to the documentation, please make pull requests to [this repository](https://github.com/anufrievroman/waypaper-docs).
 
 ### Support
 
