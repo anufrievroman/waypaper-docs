@@ -4,7 +4,7 @@ description: Change wallpapers with a style
 
 # Waypaper
 
-GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as a frontend for popular wallpaper backends like `swaybg`, `swww`, `wallutils` and `feh`. Developed by [Roman Anufriev](https://app.gitbook.com/o/hAqzIwC67MJSu3lFreUe/s/tcj89Kky0qwCogWefYcf/) since 2023.
+GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as a frontend for popular wallpaper backends like `swaybg`, `swww`, `wallutils`, `hyprpaper` and `feh`. Developed by [Roman Anufriev](https://app.gitbook.com/o/hAqzIwC67MJSu3lFreUe/s/tcj89Kky0qwCogWefYcf/) since 2023.
 
 <figure><img src=".gitbook/assets/waypaper.jpg" alt=""><figcaption></figcaption></figure>
 
