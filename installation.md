@@ -20,9 +20,9 @@ If `pipx` is not found, you first need to install `pipx` from your package manag
 
 **On Arch-based distributions**
 
-`yay -S waypaper-git` or `yay -S waypaper-git`
+`yay -S waypaper` or `yay -S waypaper-git`
 
-The [waypaper](https://aur.archlinux.org/packages/waypaper) and [waypaper-git](https://aur.archlinux.org/packages/waypaper-git) package is available in AUR, thanks to _metak_. Please upvote to support the project.
+The [waypaper](https://aur.archlinux.org/packages/waypaper) and [waypaper-git](https://aur.archlinux.org/packages/waypaper-git) package is available in AUR, thanks to _metak_. Please upvote them to support the project. Please understand that the `waypaper-git` package is not always stable.
 
 **On NixOS**
 
@@ -31,6 +31,10 @@ The `waypaper` package is available thanks to Basil Keeler.
 #### On OpenSUSE
 
 Users of OpenSUSE [reported problems with installation](https://github.com/anufrievroman/waypaper/issues/30) via `pipx install waypaper`. This problem might be resolved by installing the `python311-pycairo-devel` package.
+
+#### On Fedora
+
+Users reprted [issues with installation](https://github.com/anufrievroman/waypaper/issues/53), which might be resolved by installing `cairo-gobject-devel package`. Then install with `pipx` as described above.
 
 ## Dependencies
 

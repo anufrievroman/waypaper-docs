@@ -19,3 +19,5 @@
 `.` - Include/exclude hidden files and folders
 
 `?` - Help
+
+`q`- Quit
