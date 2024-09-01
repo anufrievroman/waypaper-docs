@@ -34,7 +34,9 @@ Users of OpenSUSE [reported problems with installation](https://github.com/anufr
 
 #### On Fedora
 
-Users reprted [issues with installation](https://github.com/anufrievroman/waypaper/issues/53), which might be resolved by installing `cairo-gobject-devel package`. Then install with `pipx` as described above.
+Users reported [issues with installation](https://github.com/anufrievroman/waypaper/issues/53), which might be resolved by installing `cairo-gobject-devel package`. Then install with `pipx` as described above.&#x20;
+
+If it doesn't work, Waypaper is available in an [external repository owned by Solopasha](https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/). So, you can add this repository as `sudo dnf copr enable solopasha/hyprland` and install as `sudo dnf install wayapaper`.
 
 ## Dependencies
 
