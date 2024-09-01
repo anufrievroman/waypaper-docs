@@ -20,6 +20,15 @@ To see the list of hotkeys, press `?`.
 
 `--random` - sets a random wallpaper.
 
+`--folder path/to/folder` - sets folder of wallpaper images.
+
+`--wallpaper path/to/image.jpg` - sets the wallpaper without running the GUI.
+
 `--backend XXX` - specifies which backend to use, which can be either `swaybg`, `swww`, `feh`, `hyprpaper` or `wallutils`. Useful if you use waypaper on both Wayland and Xorg on the same machine. By default, last used backend is used.
 
 `--fill XXX` - specifies filling type, which can be either `fill`, `stretch`, `fit`, `center`, or `tile`.
+
+`--list` - list current wallpapers and monitors in standard output in json format.
+
+`--state-file path/to/file` - sets alternative path to state file.
+
