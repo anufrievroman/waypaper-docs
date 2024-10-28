@@ -27,6 +27,10 @@ GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as 
 * [Troubleshooting](troubleshooting.md)
 * [Support and contribution](support-and-contribution.md)
 
+### Demo
+
+{% embed url="https://www.youtube.com/watch?v=O9OL7iH_KVY" %}
+
 ### Repositories
 
 * Code: [https://github.com/anufrievroman/waypaper](https://github.com/anufrievroman/waypaper)
@@ -34,4 +38,3 @@ GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as 
 
 If you enjoy using Waypaper, please consider [supporting](support-and-contribution.md)  the project.
 
-###
