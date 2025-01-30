@@ -27,7 +27,7 @@ use_xdg_state = False
 
 Most of the options in the config are controlled by the GUI application and user is not expected to change them manually.
 
-However, to use wallpaper from multiple folder the folder paths will need to be placed in the config explicilty and will be overwritten if changed in the GUI.
+However, to use wallpaper from multiple folders, the folder paths will need to be placed in the config explicilty and will be overwritten if changed in the GUI.
 
 To use wallpaper from multiple folder, put folders separated line by line.
 ```
