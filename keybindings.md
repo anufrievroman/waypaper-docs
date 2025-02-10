@@ -18,8 +18,8 @@
 
 `.` - Include/exclude hidden files and folders
 
-`/`- Search
+`/` - Search
 
 `?` - Help
 
-`q`- Quit
+`q`- Quit (`Esc`)
