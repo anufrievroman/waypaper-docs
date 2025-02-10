@@ -10,11 +10,11 @@
 
 `f` - Change wallpaper folder
 
-`r`  - Re-cache wallpapers
+`r` - Re-cache wallpapers
 
 `R` - Set a random wallpaper
 
-`s`  - Include/exclude subfolders
+`s` - Include/exclude subfolders
 
 `.` - Include/exclude hidden files and folders
 
@@ -22,4 +22,4 @@
 
 `?` - Help
 
-`q`- Quit (`Esc`)
+`q` - Quit (`Esc`)
