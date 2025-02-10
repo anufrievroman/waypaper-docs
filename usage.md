@@ -14,7 +14,7 @@ To restore your wallpaper at launch, add `waypaper --restore` to your startup co
 
 To see the list of hotkeys, press `?`.
 
-#### Options
+#### CLI options
 
 `--restore` - sets the last chosen wallpaper. Useful at launch of the window manager.
 
@@ -28,7 +28,9 @@ To see the list of hotkeys, press `?`.
 
 `--fill XXX` - specifies filling type, which can be either `fill`, `stretch`, `fit`, `center`, or `tile`.
 
-`--list` - list current wallpapers and monitors in standard output in json format.
+`--list` - list current wallpapers, monitors and backend in standard output in json format.
 
 `--state-file path/to/file` - sets alternative path to state file.
+
+`--no-post-command` - prevents running the `post_command` set in config.
 

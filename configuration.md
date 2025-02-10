@@ -17,6 +17,8 @@ all_subfolders = False
 show_hidden = False
 show_gifs_only = False
 show_path_in_tooltip = True
+number_of_columns = 3
+use_xdg_state = False
 swww_transition_type = any
 swww_transition_step = 90
 swww_transition_angle = 0
@@ -24,11 +26,10 @@ swww_transition_duration = 2
 swww_transition_fps = 60
 mpvpaper_sound = False
 mpvpaper_options = 
-use_xdg_state = False
 post_command = 
 ```
 
-Most of the options in the config are controlled by the GUI application and user is not expected to change them manually.
+Most of the options in the config are controlled by the GUI application, and the user is not expected to change them manually.
 
 However, to use wallpaper from multiple folders, the folder paths will need to be placed in the config explicitly and will be overwritten if changed in the GUI.
 
