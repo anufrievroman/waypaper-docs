@@ -29,11 +29,11 @@ mpvpaper_options =
 post_command = 
 ```
 
-Most of the options in the config are controlled by the GUI application, and the user is not expected to change them manually.
+Most of the options in the config are controlled by the GUI application, and the user is not expected to change them manually. However, some advanced parameter can be set only in config:
 
-However, to use wallpaper from multiple folders, the folder paths will need to be placed in the config explicitly and will be overwritten if changed in the GUI.
+### Folders
 
-To use wallpaper from multiple folders, put folders separated line by line.
+To use wallpapers from multiple folders, the folder paths will need to be placed in the config explicitly and will be overwritten if changed in the GUI. To use wallpaper from multiple folders, put folders separated line by line.
 
 ```
 folder = /path/folder_1
@@ -41,14 +41,33 @@ folder = /path/folder_1
          /path/folder_3
 ```
 
-The following options can be set by the user and are not changed by GUI application:
+### Running scripts after setting wallpaper
 
-`post_command` option can be used to automatically run a command after selecting a wallpaper. This option supports `$wallpaper` parameter, so one could write something like:
+`post_command` option can be used to automatically run a command after selecting a wallpaper. This option supports `$wallpaper` parameter, so you can write something like:
 
-`post_command = echo "My new wallpaper: $wallpaper "`
+```
+post_command = echo "My new wallpaper: $wallpaper "
+```
 
 or you can run your own script there as:
 
-`post_command = my_wallpaper_script.sh $wallpaper`&#x20;
+```
+post_command = my_wallpaper_script.sh $wallpaper
+```
+
+### Language
 
 The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `ru`, `pl`, `zh`, `zh_HK`.
+
+### State file
+
+`use_xdg_state` parameter is useful when you want to use a state file instead of a traditional config file. The state file will be then saved separately in a state directory and contain state parameters like wallpapers and monitors. Useful for systems with immutable configs.
+
+### Video options
+
+`mpvpaper_options` can contain some setting for the video wallpaper is you uses _mpvpaper_ backend. For example, you can specify something like:
+
+```
+mpvpaper_options = profile=fast --vf-add=fps=3:round=near
+```
+
