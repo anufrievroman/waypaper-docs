@@ -10,6 +10,7 @@ description: Fixing common issues with Waypaper
 * If you see errors related to `cairo` you may need to install `pycairo-devel` or [`cairo-gobject-devel`](https://packages.fedoraproject.org/pkgs/cairo/cairo-gobject-devel/)package. It might be called a bit different on different distributions.
 * On Fedora, you might need to install `cairo-gobject-devel` package, then install `waypaper` with `pipx`.
 * If installation doesn't work via your distribution repository, try to install with `pipx`as: `pipx install waypaper` as this is the only officially maintained repository of Waypaper.
+* On MacOS, if you see an error about cairo 1.0, you need to: `brew install pygobject3 gtk+3 cairo gobject-introspection`
 
 #### General issues
 

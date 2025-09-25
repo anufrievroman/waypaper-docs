@@ -21,7 +21,7 @@ number_of_columns = 3
 use_xdg_state = False
 zen_mode = False
 swww_transition_type = any
-swww_transition_step = 90
+swww_transition_step = 63
 swww_transition_angle = 0
 swww_transition_duration = 2
 swww_transition_fps = 60
@@ -71,4 +71,3 @@ The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `
 ```
 mpvpaper_options = profile=fast --vf-add=fps=3:round=near
 ```
-
