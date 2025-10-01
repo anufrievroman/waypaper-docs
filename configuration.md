@@ -74,7 +74,7 @@ mpvpaper_options = profile=fast --vf-add=fps=3:round=near
 
 ### Custom styles and colors
 
-I can use a custom CSS file to alter the standard GTK theme by setting
+You can use a custom CSS file to alter the standard GTK theme by setting
 
 ```
 stylesheet = ~/.config/waypaper/style.css
