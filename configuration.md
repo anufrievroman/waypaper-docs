@@ -71,3 +71,40 @@ The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `
 ```
 mpvpaper_options = profile=fast --vf-add=fps=3:round=near
 ```
+
+### Custom styles and colors
+
+I can use a custom CSS file to alter the standard GTK theme by setting
+
+```
+stylesheet = ~/.config/waypaper/style.css
+```
+
+and creating a **style.css** file that might look something like that:
+
+```
+window {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button:hover {
+    background-image: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+button:hover>image {
+    -gtk-icon-shadow: none;
+    -gtk-icon-effect: none;
+}
+
+.highlighted-button {
+    background-image: none;
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.highlighted-button>image, .highlighted-button:hover>image {
+    -gtk-icon-effect: highlight;
+}
+```
