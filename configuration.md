@@ -28,6 +28,7 @@ swww_transition_fps = 60
 mpvpaper_sound = False
 mpvpaper_options = 
 post_command = 
+keybindings = ~/.config/waypaper/keybindings.ini
 ```
 
 Most of the options in the config are controlled by the GUI application, and the user is not expected to change them manually. However, some advanced parameter can be set only in config:
