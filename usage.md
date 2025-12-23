@@ -32,6 +32,8 @@ To see the list of hotkeys, press `?`.
 
 `--state-file path/to/file` - sets alternative path to state file.
 
+`--config-file path/to/file` - sets alternative path to configuration fiile.
+
 `--no-post-command` - prevents running the `post_command` set in config.
 
 ### Automatically changing wallpaper
