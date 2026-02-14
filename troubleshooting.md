@@ -23,7 +23,7 @@ description: Fixing common issues with Waypaper
 #### Hyprpaper backend
 
 * To use `hyprpaper` backend you have to be on `Hyprland` and have `hyprctl`.
-* Make sure you have inter process communication (IPC) enabled, i.e. `icp = on` in `hyprpaper.conf` and there are no warnings about it when you simply start `hyprpaper`.
+* Make sure you have inter process communication (IPC) enabled, i.e. `ipc = on` in `hyprpaper.conf` and there are no warnings about it when you simply start `hyprpaper`.
 
 Mpvpaper backend
 
