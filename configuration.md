@@ -57,6 +57,12 @@ or you can run your own script there as:
 post_command = my_wallpaper_script.sh $wallpaper
 ```
 
+Note that the `$wallpaper` variable provides an escaped representation of the path, if your script expects an unescaped representation, you can try something like:
+
+```
+read -d '' fixed <<< "$wallpaper"; my_command "$fixed"
+```
+
 ### Language
 
 The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `ru`, `pl`, `zh`, `zh_HK`.
