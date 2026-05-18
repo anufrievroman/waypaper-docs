@@ -6,7 +6,15 @@ You need to install at least one of the backends and `waypaper` itself, which wo
 
 #### 1. Install a backend
 
-Install a preferred backend from your package manager: [swww](https://github.com/Horus645/swww) or [swaybg](https://github.com/swaywm/swaybg) or mpvpaper on Wayland or [feh](https://github.com/derf/feh) on Xorg or [wallutils](https://github.com/xyproto/wallutils) on both.
+Install a preferred backend from your package manager. At least one backend is required.
+
+**Wayland backends:** [swww](https://github.com/Horus645/swww), [awww](https://github.com/heapjumper/awww), [swaybg](https://github.com/swaywm/swaybg), [hyprpaper](https://github.com/hyprwm/hyprpaper), [mpvpaper](https://github.com/GhostNaN/mpvpaper), [gslapper](https://github.com/nickdirienzo/gslapper)
+
+**Xorg backends:** [feh](https://github.com/derf/feh), [xwallpaper](https://github.com/stoeckmann/xwallpaper)
+
+**Cross-platform:** [wallutils](https://github.com/xyproto/wallutils) (Wayland and Xorg)
+
+**Specialized:** [linux-wallpaperengine](https://github.com/Almamu/linux-wallpaperengine) (Steam Wallpaper Engine integration)
 
 #### 2. Install Waypaper
 
@@ -26,7 +34,9 @@ The [waypaper](https://aur.archlinux.org/packages/waypaper) and [waypaper-git](h
 
 **On NixOS**
 
-The `waypaper` package is available thanks to Basil Keeler.
+The `waypaper` package is available thanks to Basil Keeler. Install with:
+
+`nix-env -iA nixpkgs.waypaper`
 
 #### On OpenSUSE
 
@@ -36,11 +46,13 @@ Users of OpenSUSE [reported problems with installation](https://github.com/anufr
 
 Users reported [issues with installation](https://github.com/anufrievroman/waypaper/issues/53), which might be resolved by installing `cairo-gobject-devel package`. Then install with `pipx` as described above.&#x20;
 
-If it doesn't work, Waypaper is available in an [external repository owned by Solopasha](https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/). So, you can add this repository as `sudo dnf copr enable solopasha/hyprland` and install as `sudo dnf install wayapaper`.
+If it doesn't work, Waypaper is available in an [external repository owned by Solopasha](https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/). So, you can add this repository as `sudo dnf copr enable solopasha/hyprland` and install as `sudo dnf install waypaper`.
 
 ## Dependencies
 
-* `swww` or `swaybg` or `feh` or `wallutils` or `hyprpaper`
-* gobject python library (it might be called `python-gobject` or `python3-gi` or `python3-gobject` in your package manager.)
-* `python-importlib_metadata`
+* At least one backend (see above)
+* `python-gobject` (GTK3 bindings, may also be called `python3-gi` or `python3-gobject`)
 * `python-platformdirs`
+* `python-pillow` (image processing)
+* `python-imageio` and `python-imageio-ffmpeg` (video thumbnail generation, required for `mpvpaper` and `gslapper`)
+* `python-screeninfo` (monitor detection)

@@ -8,7 +8,7 @@ If you'd like to contribute to the documentation, please make pull requests to [
 
 #### Contribution Instructions
 
-1. Fork the `wayapaper` repository on Github.
+1. Fork the `waypaper` repository on Github.
 2. Clone your fork of `waypaper`
 
 ```bash

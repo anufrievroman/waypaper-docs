@@ -10,13 +10,18 @@ GUI wallpaper setter for Wayland and Xorg window managers on Linux. It works as 
 
 ### Features
 
-* Vim keys
-* Support for GIF animations (with `swww`)
-* Support for multiple monitors (with `swww`)
-* Works on Wayland (with `swww` or `swaybg` or `wallutils` or `hyprpaper`)
-* Works on Xorg (with `feh` or `wallutils`)
+* Vim-style keyboard navigation
+* Support for GIF animations (with `swww`, `awww`, `mpvpaper`, or `gslapper`)
+* Support for video wallpapers (with `mpvpaper`, `gslapper`, or `linux-wallpaperengine`)
+* Support for multiple monitors
+* Works on Wayland (with `swww`, `awww`, `swaybg`, `hyprpaper`, `mpvpaper`, `gslapper`, or `wallutils`)
+* Works on Xorg (with `feh`, `xwallpaper`, or `wallutils`)
+* Works on macOS (native support)
 * Restores wallpaper at launch of your WM
 * Caching for fast loading
+* Zen mode for a minimal, distraction-free interface
+* Post-command hook to run a script after each wallpaper change
+* Customizable CSS stylesheet for theming
 
 ### Contents
 

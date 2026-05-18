@@ -24,7 +24,9 @@ To see the list of hotkeys, press `?`.
 
 `--wallpaper path/to/image.jpg` - sets the wallpaper without running the GUI.
 
-`--backend XXX` - specifies which backend to use, which can be either `swaybg`, `swww`, `feh`, `hyprpaper` or `wallutils`. Useful if you use waypaper on both Wayland and Xorg on the same machine. By default, last used backend is used.
+`--backend XXX` - specifies which backend to use. Accepted values: `swaybg`, `swww`, `awww`, `hyprpaper`, `mpvpaper`, `gslapper`, `feh`, `xwallpaper`, `wallutils`, `linux-wallpaperengine`, `macos`. Useful if you use waypaper on both Wayland and Xorg on the same machine. By default, the last used backend is used.
+
+`--monitor NAME` - specifies the target monitor by name. If omitted, the wallpaper is set on all monitors.
 
 `--fill XXX` - specifies filling type, which can be either `fill`, `stretch`, `fit`, `center`, or `tile`.
 

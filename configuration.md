@@ -1,6 +1,6 @@
 # Configuration
 
-On the first run, a config file will be created in your config directory, typically it is at`~/.config/waypaper/config.ini` Here is a typical config:
+On the first run, a config file will be created in your config directory, typically at `~/.config/waypaper/config.ini`. Here is a typical config:
 
 ```
 [Settings]
@@ -45,19 +45,19 @@ folder = /path/folder_1
 
 ### Running scripts after setting wallpaper
 
-`post_command` option can be used to automatically run a command after selecting a wallpaper. This option supports `$wallpaper` parameter, so you can write something like:
+`post_command` option can be used to automatically run a command after selecting a wallpaper. This option supports the `$wallpaper` and `$monitor` variables. For example:
 
 ```
-post_command = echo "My new wallpaper: $wallpaper "
+post_command = echo "New wallpaper on $monitor: $wallpaper"
 ```
 
-or you can run your own script there as:
+or you can run your own script:
 
 ```
-post_command = my_wallpaper_script.sh $wallpaper
+post_command = my_wallpaper_script.sh $wallpaper $monitor
 ```
 
-Note that the `$wallpaper` variable provides an escaped representation of the path, if your script expects an unescaped representation, you can try something like:
+Note that the `$wallpaper` variable provides an escaped representation of the path. If your script expects an unescaped representation, you can try:
 
 ```
 read -d '' fixed <<< "$wallpaper"; my_command "$fixed"
@@ -65,7 +65,7 @@ read -d '' fixed <<< "$wallpaper"; my_command "$fixed"
 
 ### Language
 
-The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `ru`, `pl`, `zh`, `zh_HK`.
+The `language` parameter can be set to one of the following: `en` (English), `de` (German), `fr` (French), `pl` (Polish), `ru` (Russian), `be` (Belarusian), `es` (Spanish), `zh` (Chinese).
 
 ### State file
 
@@ -78,6 +78,32 @@ The `language` parameter can be set to one of the following: `en`, `de`, `fr`, `
 ```
 mpvpaper_options = profile=fast --vf-add=fps=3:round=near
 ```
+
+### Linux Wallpaper Engine
+
+When using the `linux-wallpaperengine` backend, Waypaper reads wallpapers from your Steam Workshop folder. By default it looks at `~/.steam/root/steamapps/workshop/content/431960`. You can override this with:
+
+```
+wallpaperengine_folder = /path/to/steamapps/workshop/content/431960
+```
+
+The following options control the linux-wallpaperengine behavior and are set via the GUI, but can also be edited manually:
+
+```
+linux_wallpaperengine_fps = 30
+linux_wallpaperengine_volume = 15
+linux_wallpaperengine_silent = False
+linux_wallpaperengine_noautomute = False
+linux_wallpaperengine_no_audio_processing = False
+linux_wallpaperengine_disable_particles = True
+linux_wallpaperengine_disable_mouse = False
+linux_wallpaperengine_disable_parallax = False
+linux_wallpaperengine_no_fullscreen_pause = False
+linux_wallpaperengine_fullscreen_pause_only_active = False
+linux_wallpaperengine_clamp = none
+```
+
+The `linux_wallpaperengine_clamp` option controls texture clamping and accepts: `none`, `clamp`, `border`, or `repeat`.
 
 ### Custom styles and colors
 

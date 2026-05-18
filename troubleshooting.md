@@ -14,7 +14,7 @@ description: Fixing common issues with Waypaper
 
 #### General issues
 
-* If too much RAM or CPU is used after changing wallpaper, make sure your `post_script` is not trying to do some heavy processing. By itself, Waypaper is not doing anything resource heavy.
+* If too much RAM or CPU is used after changing wallpaper, make sure your `post_command` is not trying to do some heavy processing. By itself, Waypaper is not doing anything resource heavy.
 * To restore the wallpaper after a reboot, you need to launch `waypaper --restore` at the start of your system. Usually, it means that you need to add it to the config of your WM.
 * If the wallpaper does not change, first, try to launch Waypaper in the terminal and see the output when you are trying to change the wallpaper. Also, try to change it via command line using chosen backend to make sure that backend by itself works correctly.
 * Please understand that not all backends work on all systems. `feh` is only for Xorg, while `swww` , `swaybg` and `hyprpaper` are only for Wayland.
@@ -25,8 +25,14 @@ description: Fixing common issues with Waypaper
 * To use `hyprpaper` backend you have to be on `Hyprland` and have `hyprctl`.
 * Make sure you have inter process communication (IPC) enabled, i.e. `ipc = on` in `hyprpaper.conf` and there are no warnings about it when you simply start `hyprpaper`.
 
-Mpvpaper backend
+#### Mpvpaper and Gslapper backends
 
-* If something is not working, try to click `Stop`button, it will kill all running mpvpaper processes.
-* Mpvpaper often conflicts with other backends, try to stop them is something is wrong.
-* If you can't set an image as wallpaper, only a video, try removing your`mpvpaper_options`
+* If something is not working, try clicking the `Stop` button — it will kill all running mpvpaper/gslapper processes.
+* Mpvpaper often conflicts with other backends. Try stopping them if something is wrong.
+* If you can't set an image as wallpaper (only a video), try removing your `mpvpaper_options` from the config.
+
+#### Linux Wallpaper Engine backend
+
+* Make sure `linux-wallpaperengine` is installed and available in your `PATH`.
+* Set the correct Steam workshop folder in the config via `wallpaperengine_folder`.
+* If wallpapers do not appear, verify that the folder contains numbered subdirectories with a `project.json` file inside each one.

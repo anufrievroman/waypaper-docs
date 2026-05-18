@@ -22,6 +22,8 @@
 
 `/` - Search
 
+`z` - Toggle zen mode
+
 `?` - Help
 
 `q` - Quit (`Esc`)
@@ -34,7 +36,7 @@ To remap keybindings, add a line in your config:
 keybindings = ~/.config/waypaper/keybindings.ini
 ```
 
-And create a `keybingins.ini` file in your config directory. Here is an example:
+And create a `keybindings.ini` file in your config directory. Here is an example:
 
 ```ini
 [Keybindings]
