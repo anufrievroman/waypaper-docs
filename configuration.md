@@ -25,6 +25,7 @@ swww_transition_step = 63
 swww_transition_angle = 0
 swww_transition_duration = 2
 swww_transition_fps = 60
+swww_filter = Lanczos3
 mpvpaper_sound = False
 mpvpaper_options = 
 post_command = 
@@ -66,6 +67,23 @@ read -d '' fixed <<< "$wallpaper"; my_command "$fixed"
 ### Language
 
 The `language` parameter can be set to one of the following: `en` (English), `de` (German), `fr` (French), `pl` (Polish), `ru` (Russian), `be` (Belarusian), `es` (Spanish), `zh` (Chinese).
+
+### Slideshow
+
+The built-in slideshow (see [Usage](usage.md)) is controlled by these options, all set via the GUI:
+
+```
+show_slideshow_panel = False
+slideshow_interval = 60
+slideshow_enabled = False
+waypaperd_cycle_length = 1800
+```
+
+`show_slideshow_panel` toggles the slideshow controls in the GUI. `slideshow_interval` is the interval in minutes used by the GUI. `slideshow_enabled` remembers whether the slideshow was running, so `waypaper --restore` can resume it after a reboot. `waypaperd_cycle_length` is the fallback interval in seconds used by the `waypaperd` daemon when it is started without an explicit interval.
+
+### swww filter
+
+`swww_filter` sets the scaling filter for the `swww` and `awww` backends. Accepted values: `Nearest`, `Bilinear`, `CatmullRom`, `Mitchell`, `Lanczos3`.
 
 ### State file
 

@@ -38,7 +38,15 @@ To see the list of hotkeys, press `?`.
 
 `--no-post-command` - prevents running the `post_command` set in config.
 
+`--zen-mode` - launches in Zen mode, which hides the top bar and options panel for a minimal, grid-only view. Zen mode can also be toggled from the options menu or with a hotkey.
+
 ### Automatically changing wallpaper
+
+#### From the GUI (slideshow)
+
+The simplest way is the built-in slideshow. Enable the slideshow panel from the options menu, set an interval in minutes, and start it. Waypaper runs a small background daemon (`waypaperd`) that changes to a random wallpaper on that interval, and stops it when you press stop.
+
+If you also add `waypaper --restore` to your startup config, the slideshow resumes automatically after a reboot when it was left enabled.
 
 #### Simple bash script
 
