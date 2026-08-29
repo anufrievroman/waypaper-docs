@@ -76,10 +76,9 @@ The built-in slideshow (see [Usage](usage.md)) is controlled by these options, a
 show_slideshow_panel = False
 slideshow_interval = 60
 slideshow_enabled = False
-waypaperd_cycle_length = 1800
 ```
 
-`show_slideshow_panel` toggles the slideshow controls in the GUI. `slideshow_interval` is the interval in minutes used by the GUI. `slideshow_enabled` remembers whether the slideshow was running, so `waypaper --restore` can resume it after a reboot. `waypaperd_cycle_length` is the fallback interval in seconds used by the `waypaperd` daemon when it is started without an explicit interval.
+`show_slideshow_panel` toggles the slideshow controls in the GUI. `slideshow_interval` is the interval in minutes. `slideshow_enabled` remembers whether the slideshow was running, so `waypaper --restore` can resume it after a reboot. The `waypaperd` daemon also uses `slideshow_interval` when it is started without an explicit interval (for example from the systemd unit).
 
 ### swww filter
 
